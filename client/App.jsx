@@ -8,10 +8,11 @@ import Articles from './infoPages/articlesPage/articles.jsx';
 import Education from './infoPages/educationPage/education.jsx';
 import FAQs from './infoPages/FAQsPage/FAQs.jsx';
 import Item from './infoPages/itemPage/item.jsx';
-import Login from './userPages/loginPage/login.jsx';
-import SignUp from './userPages/signUpPage/signUp.jsx';
+// import Login from './userPages/loginPage/login.jsx';
+// import SignUp from './userPages/signUpPage/signUp.jsx';
 import Volunteer from './userPages/volunteerPage/volunteer.jsx';
 import User from './userPages/userPage/user.jsx';
+import LoginComponent from './userPages/loginPage/components/loginComponent.jsx';
 
 
 
@@ -29,10 +30,11 @@ class App extends React.Component {
           <Route path="/education" element={<Education />} />
           <Route path="/faqs" element={<FAQs />} />
           <Route path="/volunteer" element={<Volunteer />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/SignUp" element={<SignUp />} />
+          {/* <Route path="/login" element={<Login />} />
+          <Route path="/SignUp" element={<SignUp />} /> */}
           <Route path="/User" element={<User />} />
           <Route path="/Item" element={<Item />} />
+          <Route path="/Login" element={<LoginComponent />} />
         </Routes>
         </main>
       </Router>

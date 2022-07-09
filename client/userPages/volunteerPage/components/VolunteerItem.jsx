@@ -30,8 +30,8 @@ const VolunteerItem = (props) => {
           <Map center={props.coordinates} zoom={16} />
         </div>
       </Modal>
-      <li className="volunteer-item">
-        <Card className="volunteer-item__content">
+      <Card className="volunteer-item">
+        <div className="volunteer-item__content">
           <div className="volunteer-item__image">
             <img src={props.image} alt={props.name} />
           </div>
@@ -53,8 +53,8 @@ const VolunteerItem = (props) => {
               </a>
             </Button>
           </div>
-        </Card>
-      </li>
+        </div>
+      </Card>
     </>
   );
 };
